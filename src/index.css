@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+/* ===== Theme Variables ===== */
+:root,
+[data-theme="dark"] {
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #12121a;
+  --bg-card: #1a1a2e;
+  --bg-card-hover: #222240;
+  --bg-glass: rgba(26, 26, 46, 0.7);
+  --bg-modal: rgba(0, 0, 0, 0.85);
+
+  --text-primary: #e8e8f0;
+  --text-secondary: #a0a0b8;
+  --text-muted: #6b6b80;
+
+  --accent-primary: #6c63ff;
+  --accent-secondary: #00d4aa;
+  --accent-tertiary: #ff6b9d;
+  --accent-glow: rgba(108, 99, 255, 0.3);
+  --accent-glow-strong: rgba(108, 99, 255, 0.6);
+
+  --gradient-primary: linear-gradient(135deg, #6c63ff, #00d4aa);
+  --gradient-hero-text: linear-gradient(135deg, #8b83ff, #00f0c0);
+  --gradient-hero: linear-gradient(180deg, #0a0a0f 0%, #12121a 100%);
+  --gradient-card: linear-gradient(145deg, #1a1a2e, #16213e);
+
+  --border-color: rgba(108, 99, 255, 0.15);
+  --border-glow: rgba(108, 99, 255, 0.4);
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 30px rgba(108, 99, 255, 0.2);
+
+  --nav-bg: rgba(10, 10, 15, 0.85);
+
+  --timeline-line: rgba(108, 99, 255, 0.3);
+  --timeline-dot: #6c63ff;
+}
+
+[data-theme="light"] {
+  --bg-primary: #f5f5fa;
+  --bg-secondary: #eeeef5;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f0f0ff;
+  --bg-glass: rgba(255, 255, 255, 0.8);
+  --bg-modal: rgba(0, 0, 0, 0.6);
+
+  --text-primary: #1a1a2e;
+  --text-secondary: #4a4a68;
+  --text-muted: #8888a0;
+
+  --accent-primary: #5a52d5;
+  --accent-secondary: #00b894;
+  --accent-tertiary: #e84393;
+  --accent-glow: rgba(90, 82, 213, 0.15);
+  --accent-glow-strong: rgba(90, 82, 213, 0.3);
+
+  --gradient-primary: linear-gradient(135deg, #5a52d5, #00b894);
+  --gradient-hero-text: linear-gradient(135deg, #2d2799, #006b50);
+  --gradient-hero: linear-gradient(180deg, #f5f5fa 0%, #eeeef5 100%);
+  --gradient-card: linear-gradient(145deg, #ffffff, #f0f0ff);
+
+  --border-color: rgba(90, 82, 213, 0.15);
+  --border-glow: rgba(90, 82, 213, 0.3);
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.12);
+  --shadow-glow: 0 0 30px rgba(90, 82, 213, 0.1);
+
+  --nav-bg: rgba(245, 245, 250, 0.9);
+
+  --timeline-line: rgba(90, 82, 213, 0.25);
+  --timeline-dot: #5a52d5;
+}
+
+/* ===== Global Resets & Base ===== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  transition: background-color 0.4s ease, color 0.4s ease;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--accent-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-secondary);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ===== Typography ===== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* ===== Section Styles ===== */
+.section {
+  padding: 100px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 60px;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ===== Scrollbar ===== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-secondary);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 16px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}

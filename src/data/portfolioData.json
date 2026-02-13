@@ -1,0 +1,206 @@
+{
+    "personal": {
+        "name": "Amit Harwani",
+        "title": "Behavioral Biometrics | Deep Learning | Software Engineer",
+        "tagline": "",
+        "email": "harwania21@gmail.com",
+        "github": "https://github.com/amitHarwani",
+        "linkedin": "https://linkedin.com/in/amitHarwani",
+        "location": "United Arab Emirates"
+    },
+    "education": [
+        {
+            "id": 1,
+            "degree": "Master of Science in Digital Transformation",
+            "institution": "University of Wollongong",
+            "year": "2023 - 2025",
+            "gpa": 3.90,
+            "highlights": [
+                "Thesis: Trained a Transformer-based model for Multi-User Multi-Modal Continuous Authentication via Behavioral Biometrics",
+                "The model achieved an EER of 1.91% on the HMOG Dataset"
+            ]
+        },
+        {
+            "id": 2,
+            "degree": "Bachelors of Computer Science",
+            "institution": "University of Wollongong In Dubai",
+            "year": "2017 - 2021",
+            "gpa": 3.97,
+            "highlights": [
+                "Receipient of the Top Graduate Award",
+                "Innovation Fair Award Winner for Project StegoPay: Using Coverless Image Steganography to further secure Digital Payments"
+            ]
+        }
+    ],
+    "experience": [
+        {
+            "id": 1,
+            "role": "Programmer Analyst | Software Engineer",
+            "company": "Cognizant Technology Solutions, UAE",
+            "startDate": "Aug. 2022",
+            "endDate": "Nov. 2023",
+            "responsibilities": [
+                "Client - Americana Foods - Last Mile Delivery Platform",
+                "Developed the Order Reports module (frontend), optimized to handle 100K+ orders",
+                "Built a real-time Order Trace Log module using Shared Workers to synchronize updates across tabs, reducing API calls.",
+                "Implemented multilingual and RTL support",
+                "Developed the admin module (frontend) for store onboarding and driver updates, with integrated Excel processing and validation.",
+                "Delivered a scalable full-stack reporting service built with Node.js, Express.js, and Kafka to enable high volume report generation.",
+                "Led the development of a mobile-first web app for zone controllers, using atomic design and customizable charts"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "title": "Continuous Authentication using Behavioral Biometrics via a Transformer Based Deep Learning Model",
+            "shortDescription": "Research Project which addresses the critical gap of multi-user continuous authentication.",
+            "detailedDescription": "Developed and trained a Transformer-based deep learning model for continuous user authentication on smart devices using behavioral biometrics (touch dynamics, typing patterns, and gait analysis). The research addressed the critical gap of multi-user continuous authentication, enabling multiple authorized users on a single device. The model achieved an Equal Error Rate (EER) of 1.91% with a 2-second window, leveraging Out-of-Distribution (OOD) detection techniques to eliminate the need for imposter datasets.",
+            "technologies": [
+                "Python",
+                "PyTorch",
+                "Numpy",
+                "Pandas",
+                "Matplotlib"
+            ],
+            "github": "https://github.com/amitHarwani/behavioural_biometric",
+            "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop",
+            "additionalImages": [
+                "https://images.unsplash.com/photo-1676299081847-824916de030a?w=600&h=400&fit=crop"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Big Data Pipeline for Retail Demand Forecasting - PoC",
+            "shortDescription": "A PoC demonstrating a retail demand forecasting pipeline with daily batch processing. ",
+            "detailedDescription": "A scheduled pipeline ingests sales, store, product, and promotion data into a centralized data lake, processes and enriches it with Apache Spark, and generates seven-day product–store forecasts using Spark ML. Results are stored in PostgreSQL and visualized in Apache Superset, with the entire workflow orchestrated daily by Apache Airflow.",
+            "technologies": [
+                "Apache Superset",
+                "Spark",
+                "MinIO",
+                "Python",
+                "PostgreSQL"
+            ],
+            "github": "https://github.com/amitHarwani/retail_demand_forecasting_big_data_engineering",
+            "image": "./retail_demand_forecasting_proj_img_1.jpg",
+            "additionalImages": []
+        },
+        {
+            "id": 3,
+            "title": "Bookkeeping Platform",
+            "shortDescription": "A microservices-based platform featuring authentication, ledger management, Accounts Receivable tracking, dashboards, and RBAC.",
+            "detailedDescription": "A mobile-app based bookkeeping platform which provides tools for managing companies, users, inventory, sales, purchases, and reports. The application supports multi-branch setups and role-based access control to ensure secure and efficient operations. With features like dashboards for daily summaries, detailed reports, and filters for quick data retrieval, it is built to meet the needs of businesses of various scales.",
+            "technologies": [
+                "React Native",
+                "Node.js",
+                "Express.js",
+                "PostgreSQL",
+                "gRPC",
+                "JavaScript",
+                "TypeScript"
+            ],
+            "github": "https://github.com/amitHarwani?tab=repositories&q=bookkeeping&type=&language=&sort=",
+            "image": "./bookkeeping_client_image_1.png",
+            "additionalImages": []
+        },
+        {
+            "id": 4,
+            "title": "Ecommerce Client",
+            "shortDescription": "An eCommerce web client built using modern frontend technologies, integrating seamlessly with a public FreeAPI",
+            "detailedDescription": "A full-featured eCommerce web client built using React 18, Vite, Tailwind CSS, and Redux Toolkit, consuming a public FreeAPI. The app supports user authentication via email and Google SSO, multilingual and RTL language support, product browsing, cart management, coupon application, PayPal payments, and complete order tracking. It includes a admin dashboard for managing categories, products, coupons, and orders using AG Grid. The application leverages Axios for API communication, React Hook Form for robust form handling, and i18n for localization, providing a responsive, secure, and user-friendly interface.",
+            "technologies": [
+                "ReactJS",
+                "TailwindCSS",
+                "Redux Toolkit",
+                "Axios",
+                "i18n",
+                "AG Grid",
+                "React Hook Form"
+            ],
+            "github": "https://github.com/amitHarwani/ecommerce_client",
+            "image": "./ecommerce_client_image_1.png",
+            "additionalImages": []
+        }
+    ],
+    "achievements": [
+        {
+            "id": 1,
+            "title": "UAE Golden Visa Holder (Outstanding Students Category)",
+            "description": "",
+            "year": "2022",
+            "icon": "trophy"
+        },
+        {
+            "id": 2,
+            "title": "UOWD CS Top Graduate 2021",
+            "description": "",
+            "year": "2021",
+            "icon": "trophy"
+        },
+        {
+            "id": 3,
+            "title": "UOWD Innovation Fair Award Winner 2021",
+            "description": "Won first place for Project StegoPay",
+            "year": "2021",
+            "icon": "code"
+        }
+    ],
+    "certifications": [
+        {
+            "id": 1,
+            "title": "AWS Certified Cloud Practitioner",
+            "issuer": "Amazon Web Services",
+            "date": "April 2024",
+            "credentialUrl": "https://www.credly.com/badges/a28dad1e-f6c7-4c40-a6b2-f00c4a4fb253"
+        },
+        {
+            "id": 2,
+            "title": "IBM Data Science Practitioner Certificate",
+            "issuer": "IBM",
+            "date": "Oct. 2024",
+            "credentialUrl": "https://www.credly.com/badges/c3d2c81f-29af-4b8f-923b-2f9fddf692df"
+        },
+        {
+            "id": 3,
+            "title": "Oracle Cloud Infrastructure 2025 Certified Foundations Associate",
+            "issuer": "Oracle",
+            "date": "Jul. 2025",
+            "credentialUrl": "https://catalog-education.oracle.com/ords/certview/sharebadge?id=2BAEF3CE0B4632D8FC8A2AF44DFFBF540DD6F73F3F60123CF1544E9BE1AFED62"
+        },
+        {
+            "id": 4,
+            "title": "Enterprise Design Thinking Graduate Certificate",
+            "issuer": "IBM",
+            "date": "Feb. 2025",
+            "credentialUrl": "https://www.credly.com/badges/e2dfde1e-c4d5-402f-990f-808c1c6520f9"
+        },
+        {
+            "id": 5,
+            "title": "Enterprise Design Thinking Co-Creator",
+            "issuer": "IBM",
+            "date": "Nov. 2024",
+            "credentialUrl": "https://www.credly.com/badges/526f1644-396c-4db0-abf3-a4e4409d140b"
+        },
+        {
+            "id": 6,
+            "title": "Enterprise Design Thinking Practitioner",
+            "issuer": "IBM",
+            "date": "No.v 2024",
+            "credentialUrl": "https://www.credly.com/badges/1a09e7d6-aee6-4ec1-af09-f613af681b24"
+        },
+        {
+            "id": 7,
+            "title": "IBM Cybersecurity Practitioner Certificate",
+            "issuer": "IBM",
+            "date": "Sept. 2024",
+            "credentialUrl": "https://www.credly.com/badges/24103b04-db78-445a-974b-c4fd31bce079"
+        },
+        {
+            "id": 8,
+            "title": "AWS Academy Graduate - AWS Academy Cloud Foundations",
+            "issuer": "AWS",
+            "date": "Mar. 2024",
+            "credentialUrl": "https://www.credly.com/badges/59c84da5-46de-484e-8f10-1a85f23a5921"
+        }
+    ]
+}
